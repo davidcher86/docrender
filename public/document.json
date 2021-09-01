@@ -1,0 +1,64 @@
+{
+  "documentLayout": {
+    "block-id-h3hjhf": {
+      "blockType": "simpleText",
+      "size": 3,
+      "order": 0,
+      "data": {
+        "title": "title",
+        "content": "text text text text text text"
+      }
+    },
+    "block-id-huiohf": {
+      "blockType": "image",
+      "size": 2,
+      "order": 3,
+      "data": {
+        "url": "/img/reactIcon.jpg",
+        "caption": "image caption",
+        "altText": "altText"
+      }
+    },
+    "block-id-hqy3hf": {
+      "blockType": "quote",
+      "size": 4,
+      "order": 4,
+      "data": "the plural od anecdote is no datata. -marc bekoff"
+    },
+    "block-id-h55g33": {
+      "blockType": "table",
+      "size": 1,
+      "order": 6,
+      "data": [
+        { "col1": "value1", "col2": "value2", "col3": "value3" },
+        { "col1": "value3", "col2": "value5", "col3": "value6" },
+        { "col1": "value7", "col2": "value8", "col3": "value9" },
+        { "col1": "value10", "col2": "value11", "col3": "value12" }
+      ]
+    },
+    "block-id-h53sff": {
+      "blockType": "html",
+      "size": 3,
+      "order": 1,
+      "data": "<div style=\"font-weight:bold;text-align:start\">text aliigned to left using HTML as content</div>"
+    },
+    "block-id-h5f3ff": {
+      "blockType": "collapsabale",
+      "size": 1,
+      "order": 5,
+      "data": {
+        "title": "title",
+        "content": "text text text text text text"
+      }
+    },
+    "block-id-h5qwff": {
+      "blockType": "collapsabale",
+      "size": 1,
+      "order": 2,
+      "data": {
+        "title": "title33",
+        "content": "text33333333ext text text"
+      }
+    }
+  }
+}
