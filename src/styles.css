@@ -6,8 +6,6 @@
   flex-direction: rows;
   margin-top: 60px;
   width: 100%;
-  /* .page-header {
-  } */
 }
 
 .title {
@@ -28,8 +26,6 @@ body {
   text-align: left;
   left: 0;
   top: 0;
-
-  /* display: flex; */
 }
 
 h1 {
@@ -45,9 +41,10 @@ h1 {
   margin-right: 20px;
 }
 
-/* .block-wrapper {
-  padding: 30px;
-} */
+.collapse-content {
+  border: 1px solid black;
+  margin-top: 11px;
+}
 
 .block {
   padding: 11px;
@@ -61,10 +58,6 @@ h1 {
   flex-direction: column;
   text-align: left;
 }
-
-/* .container {
-  min-height: 64px;
-} */
 
 .rows {
   display: flex;
@@ -84,7 +77,8 @@ h1 {
 .show {
   height: 40px;
   transition: height 0.3s ease-in;
-  overflow: hidden;
+  height: 147px;
+  overflow-y: auto;
 }
 
 .hide {
@@ -97,7 +91,6 @@ h1 {
   float: left;
   position: relative;
   margin-bottom: 10px;
-  /* top: -22px; */
 }
 
 .padding {

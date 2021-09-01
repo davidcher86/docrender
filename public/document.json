@@ -6,7 +6,7 @@
       "order": 0,
       "data": {
         "title": "title",
-        "content": "text text text text text text"
+        "content": "text text text text text text text text text text text text text text text text text text"
       }
     },
     "block-id-huiohf": {
@@ -29,12 +29,15 @@
       "blockType": "table",
       "size": 1,
       "order": 6,
-      "data": [
-        { "col1": "value1", "col2": "value2", "col3": "value3" },
-        { "col1": "value3", "col2": "value5", "col3": "value6" },
-        { "col1": "value7", "col2": "value8", "col3": "value9" },
-        { "col1": "value10", "col2": "value11", "col3": "value12" }
-      ]
+      "data": {
+        "columns": ["col1", "col2", "col3"],
+        "rows": [
+          { "col1": "value1", "col2": "value2", "col3": "value3" },
+          { "col1": "value3", "col2": "value5", "col3": "value6" },
+          { "col1": "value7", "col2": "value8", "col3": "value9" },
+          { "col1": "value10", "col2": "value11", "col3": "value12" }
+        ]
+      }
     },
     "block-id-h53sff": {
       "blockType": "html",
@@ -48,7 +51,7 @@
       "order": 5,
       "data": {
         "title": "title",
-        "content": "text text text text text text"
+        "content": "text text text text text text text text text text text text text text text text text text"
       }
     },
     "block-id-h5qwff": {
@@ -57,7 +60,7 @@
       "order": 2,
       "data": {
         "title": "title33",
-        "content": "text33333333ext text text"
+        "content": "text text text text text text text text text text text text"
       }
     }
   }

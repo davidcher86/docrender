@@ -88,14 +88,9 @@ export function TableBlock(block) {
   };
 
   // Table header render
-  const renderTableHeader = () => {
-    return (
-      <tr>
-        <th>{`col1`}</th>
-        <th>{`col2`}</th>
-        <th>{`col3`}</th>
-      </tr>
-    );
+  const renderTableHeader = (columns) => {
+    const cols = columns.map((col) => <th key={`col-${col}`}>{col}</th>);
+    return <tr>{cols}</tr>;
   };
 
   return (
@@ -106,8 +101,8 @@ export function TableBlock(block) {
       <div className="block margin" id={block.id} key={block.id}>
         <span className="block-type">{block.blockType}</span>
         <table className="table">
-          <thead>{renderTableHeader()}</thead>
-          <tbody>{renderTableRows(block.data)}</tbody>
+          <thead>{renderTableHeader(block.data.columns)}</thead>
+          <tbody>{renderTableRows(block.data.rows)}</tbody>
         </table>
       </div>
     </div>

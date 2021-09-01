@@ -1,0 +1,97 @@
+first assignment:
+
+    In the first assignment I was asked to construct a JSON object that will represent a document.
+    For this purpose, I constructed a JSON with the following structure that, in my opinion, represents 
+    document’s layout and data all together and with take in consider performance issues:
+
+
+    {
+      "documentLayout": {
+                /*	Document layout represented by a map of blocks, when each block represented by 
+                  id/key as key and the value contains objects with it’s data and layout properties.
+                  I chose intentialy the blocks to be represented hashmap, instead of arra,y by considering performance issues 
+                  for when loading very large documents containing massive list of blocks. */
+        "block-id-h3hjhf": {
+          "blockType": "simpleText", 	/* -> type of block for render purpose */
+          "size": 3,	/* -> width size of the block in a rowfor when blocks layout renders (fixed sizes listed in client code)  */
+          "order": 0,	/* -> order of the block in the document for sorting blocks when document loaded */
+          "data": {	/* -> block’s data */
+            "title": "title",
+            "content": "text text text text text text"
+          }
+        },
+        "block-id-huiohf": {
+          "blockType": "image",
+          "size": 2,
+          "order": 3,
+          "data": {
+            "url": "/img/reactIcon.jpg",
+            "caption": "image caption",
+            "altText": "altText"
+          }
+        },
+        "block-id-hqy3hf": {
+          "blockType": "quote",
+          "size": 4,
+          "order": 4,
+          "data": "the plural od anecdote is no datata. -marc bekoff"
+        },
+        "block-id-h55g33": {
+          "blockType": "table",
+          "size": 1,
+          "order": 6,
+          "data": [
+            "columns": ["col1", "col2", "col3"],  /* -> represents table header columns */
+            "rows": [                             /* -> represents table data rows */
+              { "col1": "value1", "col2": "value2", "col3": "value3" },
+              { "col1": "value3", "col2": "value5", "col3": "value6" },
+              { "col1": "value7", "col2": "value8", "col3": "value9" },
+              { "col1": "value10", "col2": "value11", "col3": "value12" }
+            ]
+          ]
+        },
+        "block-id-h53sff": {
+          "blockType": "html",
+          "size": 3,
+          "order": 1,
+          "data": "<div style=\"font-weight:bold;text-align:start\">text aliigned to left using HTML as content</div>"
+        },
+        "block-id-h5f3ff": {
+          "blockType": "collapsabale",
+          "size": 1,
+          "order": 5,
+          "data": {
+            "title": "title",
+            "content": "text text text text text text"
+          }
+        },
+        "block-id-h5qwff": {
+          "blockType": "collapsabale",
+          "size": 1,
+          "order": 2,
+          "data": {
+            "title": "title33",
+            "content": "text text text text"
+          }
+        }
+      }
+    }
+
+
+    An example Json used in app can be found in ./document.json file in the project folder
+
+second & third assigment 
+    can be found in project's folder and reviewing working app on this link:
+    https://davidcher86.github.io/csb-6lom6/
+
+fourth assigment
+    In the fourth assigment I was asked to create an EDIT mode for the loaded document and then 
+    give the user option to discard any changes made or saving the changed document in it's loaded 
+    JSON file, given there is no server side to the app. 
+    I couldn't find any way of having the client code changing the file from projects folder, that I used as 
+    loaded data for the app.
+    The only 2 ways I could think of is:
+      1 - saving the loaded JSON into localStorage, used by the browser, and saving any changes made
+          in document to this localStorage item for having kind of data persistancy to the user. but
+          localStorage has a limitation of 5 MB, so its must be considered.
+      2 - using JS to create download option for the user to get saved raw document.

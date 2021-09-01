@@ -78,7 +78,7 @@ export default function App() {
     setRollbackData(null);
   };
 
-  // function for loading the document from public folder to mimic proces of
+  // function for loading the document from public folder in projcet folder to mimic proces of
   // loading document from server
   const fetchDocument = () => {
     fetch(`document.json`, {
@@ -96,6 +96,7 @@ export default function App() {
       });
   };
 
+  // parsing each block by it's type for it's proper component
   const listBlock = (data) => {
     if (data) {
       return Object.values(data).map((item) => {
