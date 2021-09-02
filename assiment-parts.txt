@@ -1,5 +1,4 @@
-first assignment:
-
+PART A
     In the first assignment I was asked to construct a JSON object that will represent a document.
     For this purpose, I constructed a JSON with the following structure that, in my opinion, represents 
     document’s layout and data all together and with take in consider performance issues:
@@ -78,16 +77,17 @@ first assignment:
     }
 
 
-    An example Json used in app can be found in ./document.json file in the project folder
+    An example Json used in app can be found in ./public/document.json file in the project folder
 
-second & third assigment 
+PART B 
     can be found in project's folder and reviewing working app on this link:
     https://davidcher86.github.io/csb-6lom6/
 
-fourth assigment
-    In the fourth assigment I was asked to create an EDIT mode for the loaded document and then 
+
+PART C
+    In the fourth assignment I was asked to create an EDIT mode for the loaded document and then 
     give the user option to discard any changes made or saving the changed document in it's loaded 
-    JSON file, given there is no server side to the app. 
+    JSON file, given there is no server side of the app. 
     I couldn't find any way of having the client code changing the file from projects folder, that I used as 
     loaded data for the app.
     The only 2 ways I could think of is:
@@ -95,3 +95,9 @@ fourth assigment
           in document to this localStorage item for having kind of data persistancy to the user. but
           localStorage has a limitation of 5 MB, so its must be considered.
       2 - using JS to create download option for the user to get saved raw document.
+
+
+Part 2
+  - a feature I would suggest for product manager platform, is easier sign-up options for their platform
+    users get frustrated with long register process. PM can choose sign up options with social networks account
+    or even by user finger-print from his mobile.
